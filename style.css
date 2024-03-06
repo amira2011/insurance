@@ -1,0 +1,90 @@
+/* CSS HEX 
+--white-smoke: #F5F5F5ff;
+--celestial-blue: #2C9CE5ff;
+--black: #000000ff;
+--space-cadet: #2B3043ff;
+--white: #FFFFFFff;
+ #222838ff;
+*/
+* {
+  margin: 0;
+  padding: 0;
+/* border: 1px solid white; */
+}
+
+body {
+
+  font-family: 'Arial', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.side-bar {
+  background-color: #2B3043ff;
+  height: 100vh;
+  width: 20%;
+   
+}
+
+.logo {
+
+  margin-top: 5px;
+  text-align: center;
+}
+.side-bar .logo img {
+  padding: 5px;  
+  width: 80%;  
+  max-height: 100px;  
+  object-fit: contain;  
+}
+
+
+.nav-menu {
+  margin-top: 20px;
+}
+
+.nav-menu .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu .menu li{
+  margin: 5px;
+  padding: 5px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.nav-menu .menu li a {
+  display: flex;  
+  align-items: center;  
+  padding: 10px 15px;  
+  color: 	#dac7c7;
+  text-decoration: none; 
+}
+
+
+.nav-menu .menu li a .fas {
+  margin-right: 20px;  
+}
+
+.nav-menu .menu li.active a,
+.nav-menu .menu li a:hover {
+  background-color: #3b3b45; 
+  color: white;
+ }
+
+.main-content {
+  flex-grow: 1; /* Takes up the remaining space */
+  padding: 25px; /* Padding around main content */
+  background-color: #f0f0f0; /* Background color of the main content */
+}
