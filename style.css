@@ -19,7 +19,7 @@ body {
 .wrapper {
   display: flex;
   flex-direction: row;
-  height: 100vh; 
+  height: 100vh;
 }
 
 .side-bar {
@@ -95,7 +95,7 @@ body {
   align-items: center;
   padding: 25px;
   width: 100%;
- }
+}
 .navbar-header .nav-logo {
   font-size: 24px;
   font-weight: 400;
@@ -139,50 +139,67 @@ body {
 .email-dropdown-menu {
   min-width: 200px; /* Set minimum width */
 }
-.content{
+.content {
   display: flex;
 
   flex-direction: column;
   flex-grow: 1; /* Allow content to expand and fill the available space */
   width: 100%; /* Take up all available width */
-  background: #F5F5F5;
-  
+  background: #f5f5f5;
 }
-.content-header{
+.content-header {
   display: flex;
   flex-direction: row;
   padding: 25px;
   align-items: center;
   justify-content: space-between;
 }
-.content-title{
-  font-size:  1.3rem;
+.content-title {
+  font-size: 1.3rem;
   font-weight: 700;
 }
-.content-title i{
-  font-size:  1rem;
-  
-  
+.content-title i {
+  font-size: 1rem;
 }
-.content-customise{
-  color: #2C9CE5ff;
-   
+.content-customise {
+  color: #2c9ce5ff;
 }
 
-.content-customise i{
+.content-customise i {
   margin: 5px;
 }
 
-
-.content-customise a{
+.content-customise a {
   text-decoration: none;
-  color: #2C9CE5ff;
+  color: #2c9ce5ff;
 }
 
-.content-table{
+.content-table {
   margin: 0px 25px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   background: #fff;
+}
+.leads-table {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.leads-table tbody tr td a {
+  text-decoration: none;
+}
+
+.leads-table th,
+.leads-table td {
+  text-align: left;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+.leads-table thead th {
+  padding: 14px; /* Increase padding to increase height */
+
+  text-align: left;
 }
