@@ -19,11 +19,11 @@ body {
 .wrapper {
   display: flex;
   flex-direction: row;
+  height: 100vh; 
 }
 
 .side-bar {
   background-color: #2b3043ff;
-  height: 100vh;
   width: 380px;
   display: flex;
   flex-direction: column;
@@ -82,8 +82,10 @@ body {
 }
 
 .main-content {
-  width: 100%;
-  flex-grow: 1;
+  width: calc(100% - 380px); /* Adjust this if sidebar width changes */
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  flex-grow: 1; /* Take up all available space */
 }
 
 .main-content .navbar-header {
@@ -93,8 +95,7 @@ body {
   align-items: center;
   padding: 25px;
   width: 100%;
-  flex-grow: 1;
-}
+ }
 .navbar-header .nav-logo {
   font-size: 24px;
   font-weight: 400;
@@ -137,4 +138,51 @@ body {
 }
 .email-dropdown-menu {
   min-width: 200px; /* Set minimum width */
+}
+.content{
+  display: flex;
+
+  flex-direction: column;
+  flex-grow: 1; /* Allow content to expand and fill the available space */
+  width: 100%; /* Take up all available width */
+  background: #F5F5F5;
+  
+}
+.content-header{
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+.content-title{
+  font-size:  1.3rem;
+  font-weight: 700;
+}
+.content-title i{
+  font-size:  1rem;
+  
+  
+}
+.content-customise{
+  color: #2C9CE5ff;
+   
+}
+
+.content-customise i{
+  margin: 5px;
+}
+
+
+.content-customise a{
+  text-decoration: none;
+  color: #2C9CE5ff;
+}
+
+.content-table{
+  margin: 0px 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background: #fff;
 }
